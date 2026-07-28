@@ -470,6 +470,10 @@ export class LocalDB {
     return this.get<boolean>('is_logged_in', false);
   }
 
+  static isLoggedIn(): boolean {
+    return this.getIsLoggedIn();
+  }
+
   static setIsLoggedIn(val: boolean): void {
     this.set('is_logged_in', val);
     if (!val) {

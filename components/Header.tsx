@@ -385,7 +385,7 @@ export default function Header({
       );
 
       if (success) {
-        if (!LocalDB.isLoggedIn()) {
+        if (!LocalDB.getIsLoggedIn()) {
           setRegSuccess('Registration successful! Please check your email inbox to confirm your account, then sign in.');
           setRegName('');
           setRegEmail('');
