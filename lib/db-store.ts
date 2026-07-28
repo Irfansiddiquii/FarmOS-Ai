@@ -1110,7 +1110,7 @@ export class LocalDB {
   static getForum(): ForumPost[] { return this.get('forum', []); }
   static setForum(forum: ForumPost[]): void { this.set('forum', forum); }
 
-  static async addForumPost(title: string, content: string, category: 'discussion' | 'question' | 'success'): Promise<ForumPost> {
+  static async addForumPost(title: string, content: string, category: 'discussion' | 'question' | 'expert' | 'success'): Promise<ForumPost> {
     const list = this.getForum();
     const currentUser = this.getCurrentUser();
     const role = this.getActiveRole();
