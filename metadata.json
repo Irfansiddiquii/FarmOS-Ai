@@ -1,0 +1,6 @@
+{
+  "name": "FarmOS AI",
+  "description": "Smart Farming Powered by AI - Comprehensive Agritech Operating System for crop planning, AI disease detection, weather intelligence, and farm management.",
+  "requestFramePermissions": ["camera", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
