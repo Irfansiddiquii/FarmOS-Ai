@@ -693,9 +693,9 @@ export default function FarmsCropsTab() {
             <AnimatePresence>
               {showFarmForm && (
                 <motion.form 
-                  initial={{ opacity: 0, opacity: 0 }}
-                  animate={{ opacity: 1, opacity: 1 }}
-                  exit={{ opacity: 0, opacity: 0 }}
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
                   onSubmit={handleCreateFarm} 
                   className="space-y-3.5 rounded-2xl bg-white/[0.02] border border-white/10 p-4 text-xs relative z-30"
                 >
@@ -815,9 +815,9 @@ export default function FarmsCropsTab() {
             <AnimatePresence>
               {showCropForm && (
                 <motion.form 
-                  initial={{ opacity: 0, opacity: 0 }}
-                  animate={{ opacity: 1, opacity: 1 }}
-                  exit={{ opacity: 0, opacity: 0 }}
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
                   onSubmit={handleCreateCrop} 
                   className="space-y-3.5 rounded-2xl bg-white/[0.02] border border-white/10 p-4 text-xs relative z-20"
                 >
@@ -980,9 +980,9 @@ export default function FarmsCropsTab() {
             <AnimatePresence>
               {showActivityForm && activeCrop && (
                 <motion.form 
-                  initial={{ opacity: 0, opacity: 0 }}
-                  animate={{ opacity: 1, opacity: 1 }}
-                  exit={{ opacity: 0, opacity: 0 }}
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
                   onSubmit={handleCreateActivity} 
                   className="space-y-4 rounded-2xl bg-white/[0.02] border border-white/10 p-5 text-xs relative z-20"
                 >
@@ -1128,9 +1128,9 @@ export default function FarmsCropsTab() {
             <AnimatePresence>
               {showExpenseForm && (
                 <motion.form 
-                  initial={{ opacity: 0, opacity: 0 }}
-                  animate={{ opacity: 1, opacity: 1 }}
-                  exit={{ opacity: 0, opacity: 0 }}
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
                   onSubmit={handleCreateExpense} 
                   className="space-y-4 rounded-2xl bg-white/[0.02] border border-white/10 p-5 text-xs relative z-20"
                 >
