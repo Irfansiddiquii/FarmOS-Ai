@@ -181,7 +181,7 @@ export default function Home() {
             </div>
 
             {/* 1. HERO SECTION */}
-            <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-8 sm:pt-16 text-center relative z-10">
+            <section id="hero" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-8 sm:pt-16 text-center relative z-10">
               <div className="max-w-4xl mx-auto space-y-8">
 
                 {/* Floating Animated Badge */}
@@ -225,7 +225,7 @@ export default function Home() {
               </div>
 
               {/* 2. HERO SAAS DASHBOARD MOCKUP PREVIEW */}
-              <div className="mt-16 max-w-5xl mx-auto relative group">
+              <div id="hero-dashboard" className="mt-16 max-w-5xl mx-auto relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-lime-500 to-emerald-600 rounded-3xl blur-2xl opacity-25 group-hover:opacity-40 transition duration-1000"></div>
 
                 <div className="relative rounded-3xl border border-white/15 bg-[#0A0E0A]/90 p-4 sm:p-6 shadow-2xl backdrop-blur-2xl text-left overflow-hidden">
@@ -274,7 +274,7 @@ export default function Home() {
                     </div>
 
                     {/* Card 3: Weather & Rainfall */}
-                    <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-4 space-y-3">
+                    <div id="hero-weather" className="rounded-2xl border border-white/10 bg-white/[0.02] p-4 space-y-3">
                       <div className="flex items-center justify-between">
                         <span className="text-[10px] font-bold uppercase tracking-wider text-white/40">Satellite Precipitation</span>
                         <CloudSun className="h-4 w-4 text-amber-400" />
@@ -303,7 +303,7 @@ export default function Home() {
             </section>
 
             {/* 3. KEY METRICS & STATISTICS BANNER */}
-            <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <section id="metrics-banner" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-8 backdrop-blur-xl">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
 
@@ -332,7 +332,7 @@ export default function Home() {
             </section>
 
             {/* 4. FEATURE HIGHLIGHT BENTO GRID */}
-            <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-12">
+            <section id="features" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-12">
 
               <div className="text-center max-w-2xl mx-auto space-y-3">
                 <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
@@ -346,7 +346,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
                 {/* Feature 1 */}
-                <div className="glass-card glass-card-hover rounded-3xl p-6 space-y-4 relative overflow-hidden">
+                <div id="feature-ai-vision" className="glass-card glass-card-hover rounded-3xl p-6 space-y-4 relative overflow-hidden">
                   <div className="h-12 w-12 rounded-2xl bg-lime-500/10 border border-lime-500/20 flex items-center justify-center text-lime-400">
                     <Cpu className="h-6 w-6" />
                   </div>
@@ -361,7 +361,7 @@ export default function Home() {
                 </div>
 
                 {/* Feature 2 */}
-                <div className="glass-card glass-card-hover rounded-3xl p-6 space-y-4 relative overflow-hidden">
+                <div id="feature-timeline" className="glass-card glass-card-hover rounded-3xl p-6 space-y-4 relative overflow-hidden">
                   <div className="h-12 w-12 rounded-2xl bg-lime-500/10 border border-lime-500/20 flex items-center justify-center text-lime-400">
                     <BarChart3 className="h-6 w-6" />
                   </div>
@@ -376,7 +376,7 @@ export default function Home() {
                 </div>
 
                 {/* Feature 3 */}
-                <div className="glass-card glass-card-hover rounded-3xl p-6 space-y-4 relative overflow-hidden">
+                <div id="feature-marketplace" className="glass-card glass-card-hover rounded-3xl p-6 space-y-4 relative overflow-hidden">
                   <div className="h-12 w-12 rounded-2xl bg-lime-500/10 border border-lime-500/20 flex items-center justify-center text-lime-400">
                     <ShoppingBag className="h-6 w-6" />
                   </div>
@@ -391,7 +391,7 @@ export default function Home() {
                 </div>
 
                 {/* Feature 4 */}
-                <div className="glass-card glass-card-hover rounded-3xl p-6 space-y-4 relative overflow-hidden">
+                <div id="feature-schemes" className="glass-card glass-card-hover rounded-3xl p-6 space-y-4 relative overflow-hidden">
                   <div className="h-12 w-12 rounded-2xl bg-lime-500/10 border border-lime-500/20 flex items-center justify-center text-lime-400">
                     <FileText className="h-6 w-6" />
                   </div>
@@ -406,7 +406,7 @@ export default function Home() {
                 </div>
 
                 {/* Feature 5 */}
-                <div className="glass-card glass-card-hover rounded-3xl p-6 space-y-4 relative overflow-hidden">
+                <div id="feature-expert" className="glass-card glass-card-hover rounded-3xl p-6 space-y-4 relative overflow-hidden">
                   <div className="h-12 w-12 rounded-2xl bg-lime-500/10 border border-lime-500/20 flex items-center justify-center text-lime-400">
                     <Award className="h-6 w-6" />
                   </div>
@@ -440,7 +440,7 @@ export default function Home() {
             </section>
 
             {/* 5. HOW IT WORKS / PROCESS TIMELINE */}
-            <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-12">
+            <section id="how-it-works" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-12">
 
               <div className="text-center max-w-2xl mx-auto space-y-3">
                 <span className="text-[10px] font-bold uppercase tracking-widest text-lime-400">Simple 3-Step Process</span>
@@ -481,7 +481,7 @@ export default function Home() {
             </section>
 
             {/* 6. TESTIMONIALS SECTION */}
-            <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-12">
+            <section id="testimonials" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-12">
 
               <div className="text-center max-w-2xl mx-auto space-y-3">
                 <span className="text-[10px] font-bold uppercase tracking-widest text-lime-400">Trusted By Cultivators</span>
