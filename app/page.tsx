@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import FloatingChat from '@/components/FloatingChat';
 import DashboardTab from '@/components/DashboardTab';
 import FarmsCropsTab from '@/components/FarmsCropsTab';
@@ -678,41 +679,12 @@ export default function Home() {
 
       </main>
 
-      {/* Universal Footer — always sits naturally at bottom of page */}
-      <footer className="mt-auto w-full border-t border-white/10 pt-10 pb-8 bg-[#050705]/90 backdrop-blur-xl relative z-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-6">
-            <div className="flex items-center gap-3">
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-lime-500 text-black font-extrabold shadow-md">
-                <Sprout className="h-5 w-5" />
-              </div>
-              <div>
-                <span className="font-sans text-base font-black tracking-tight text-white">
-                  Farm<span className="text-lime-400">OS AI</span>
-                </span>
-                <p className="text-[10px] text-white/40 font-medium">Next-Gen Agritech Platform</p>
-              </div>
-            </div>
-
-            <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-white/50 font-medium">
-              {!isLoggedIn && (
-                <>
-                  <button onClick={() => setAuthReqTab('login')} className="hover:text-white transition cursor-pointer">Sign In</button>
-                  <button onClick={() => setAuthReqTab('register')} className="hover:text-white transition cursor-pointer">Register</button>
-                </>
-              )}
-              <span className="inline-flex items-center gap-1.5 text-lime-400 font-mono text-[10px] bg-lime-500/10 px-2.5 py-1 rounded-full border border-lime-500/20">
-                <span className="h-1.5 w-1.5 rounded-full bg-lime-400 animate-pulse"></span>
-                System Operational
-              </span>
-            </div>
-          </div>
-
-          <div className="border-t border-white/5 pt-6 text-center text-[11px] text-white/40">
-            &copy; {new Date().getFullYear()} FarmOS AI. Smart Farming Operating System. All Rights Reserved.
-          </div>
-        </div>
-      </footer>
+      {/* Universal Footer — enterprise SaaS quality */}
+      <Footer 
+        isLoggedIn={isLoggedIn} 
+        setAuthReqTab={setAuthReqTab} 
+        onSwitchTab={(tab) => setActiveFarmerTab(tab as any)} 
+      />
 
       {/* Persistent floating AI agricultural support assistant */}
       <FloatingChat />
